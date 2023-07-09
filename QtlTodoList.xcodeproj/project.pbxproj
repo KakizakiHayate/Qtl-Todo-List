@@ -15,7 +15,6 @@
 		75470D752A5026A000814D09 /* AppConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75470D742A5026A000814D09 /* AppConst.swift */; };
 		75470D792A5032EA00814D09 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75470D782A5032EA00814D09 /* CameraController.swift */; };
 		75470D7B2A50346C00814D09 /* SelectionGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75470D7A2A50346C00814D09 /* SelectionGallery.swift */; };
-		75470D7F2A50389400814D09 /* ImageManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75470D7E2A50389400814D09 /* ImageManaging.swift */; };
 		755847142A47279E00D88B2F /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755847132A47279E00D88B2F /* FirebaseManager.swift */; };
 		7558471B2A473A1B00D88B2F /* AddTodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7558471A2A473A1B00D88B2F /* AddTodoViewModel.swift */; };
 		75995FEF2A3CB81200709A6C /* QtlTodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75995FEE2A3CB81200709A6C /* QtlTodoListApp.swift */; };
@@ -42,7 +41,6 @@
 		75470D742A5026A000814D09 /* AppConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConst.swift; sourceTree = "<group>"; };
 		75470D782A5032EA00814D09 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		75470D7A2A50346C00814D09 /* SelectionGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionGallery.swift; sourceTree = "<group>"; };
-		75470D7E2A50389400814D09 /* ImageManaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManaging.swift; sourceTree = "<group>"; };
 		755847132A47279E00D88B2F /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		7558471A2A473A1B00D88B2F /* AddTodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoViewModel.swift; sourceTree = "<group>"; };
 		75995FEB2A3CB81200709A6C /* QtlTodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QtlTodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				755847132A47279E00D88B2F /* FirebaseManager.swift */,
-				75470D7E2A50389400814D09 /* ImageManaging.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -297,6 +294,7 @@
 				75995FE72A3CB81200709A6C /* Sources */,
 				75995FE82A3CB81200709A6C /* Frameworks */,
 				75995FE92A3CB81200709A6C /* Resources */,
+				F6097EEE0818BAA724EA5D70 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -376,6 +374,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F6097EEE0818BAA724EA5D70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QtlTodoList/Pods-QtlTodoList-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QtlTodoList/Pods-QtlTodoList-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QtlTodoList/Pods-QtlTodoList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -386,7 +401,6 @@
 				755847142A47279E00D88B2F /* FirebaseManager.swift in Sources */,
 				75470D7B2A50346C00814D09 /* SelectionGallery.swift in Sources */,
 				75470D752A5026A000814D09 /* AppConst.swift in Sources */,
-				75470D7F2A50389400814D09 /* ImageManaging.swift in Sources */,
 				75995FFF2A3CC01D00709A6C /* TodoViewModel.swift in Sources */,
 				7599600C2A3D45BA00709A6C /* AddTodoView.swift in Sources */,
 				75470D6D2A50256500814D09 /* RegistrationViewModel.swift in Sources */,
@@ -536,6 +550,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QtlTodoList/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -567,6 +584,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QtlTodoList/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
