@@ -13,6 +13,9 @@
 		75470D6D2A50256500814D09 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75470D6B2A50256500814D09 /* RegistrationViewModel.swift */; };
 		75470D6E2A50256500814D09 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75470D6C2A50256500814D09 /* RegistrationView.swift */; };
 		75470D752A5026A000814D09 /* AppConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75470D742A5026A000814D09 /* AppConst.swift */; };
+		75470D792A5032EA00814D09 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75470D782A5032EA00814D09 /* CameraController.swift */; };
+		75470D7B2A50346C00814D09 /* SelectionGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75470D7A2A50346C00814D09 /* SelectionGallery.swift */; };
+		75470D7F2A50389400814D09 /* ImageManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75470D7E2A50389400814D09 /* ImageManaging.swift */; };
 		755847142A47279E00D88B2F /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755847132A47279E00D88B2F /* FirebaseManager.swift */; };
 		7558471B2A473A1B00D88B2F /* AddTodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7558471A2A473A1B00D88B2F /* AddTodoViewModel.swift */; };
 		75995FEF2A3CB81200709A6C /* QtlTodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75995FEE2A3CB81200709A6C /* QtlTodoListApp.swift */; };
@@ -25,6 +28,7 @@
 		7599600C2A3D45BA00709A6C /* AddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7599600B2A3D45BA00709A6C /* AddTodoView.swift */; };
 		7599600E2A3D45C600709A6C /* UpdateTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7599600D2A3D45C600709A6C /* UpdateTodoView.swift */; };
 		759960112A3D467A00709A6C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759960102A3D467A00709A6C /* ColorExtension.swift */; };
+		75C8D76E2A5973A500564FC6 /* ImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C8D76D2A5973A500564FC6 /* ImageSource.swift */; };
 		75C9F0082A501F6300714B26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75C9F0072A501F6300714B26 /* GoogleService-Info.plist */; };
 		75E58ED12A4209FF0059312A /* TodoListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E58ED02A4209FF0059312A /* TodoListDetailView.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +40,9 @@
 		75470D6B2A50256500814D09 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		75470D6C2A50256500814D09 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		75470D742A5026A000814D09 /* AppConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConst.swift; sourceTree = "<group>"; };
+		75470D782A5032EA00814D09 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		75470D7A2A50346C00814D09 /* SelectionGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionGallery.swift; sourceTree = "<group>"; };
+		75470D7E2A50389400814D09 /* ImageManaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManaging.swift; sourceTree = "<group>"; };
 		755847132A47279E00D88B2F /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		7558471A2A473A1B00D88B2F /* AddTodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoViewModel.swift; sourceTree = "<group>"; };
 		75995FEB2A3CB81200709A6C /* QtlTodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QtlTodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +57,7 @@
 		7599600D2A3D45C600709A6C /* UpdateTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTodoView.swift; sourceTree = "<group>"; };
 		759960102A3D467A00709A6C /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		759960122A3D6C9B00709A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		75C8D76D2A5973A500564FC6 /* ImageSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSource.swift; sourceTree = "<group>"; };
 		75C9F0072A501F6300714B26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		75E58ED02A4209FF0059312A /* TodoListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListDetailView.swift; sourceTree = "<group>"; };
 		A53541DCB5A2EF66F4FD01AF /* Pods-QtlTodoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QtlTodoList.release.xcconfig"; path = "Target Support Files/Pods-QtlTodoList/Pods-QtlTodoList.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,10 +102,45 @@
 			path = AppConst;
 			sourceTree = "<group>";
 		};
+		75470D762A50327700814D09 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				75470D782A5032EA00814D09 /* CameraController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		75470D772A50329400814D09 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				75470D7A2A50346C00814D09 /* SelectionGallery.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		75470D7C2A5036AD00814D09 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				75470D7D2A5037D900814D09 /* ImageManaging */,
+				75470D762A50327700814D09 /* Camera */,
+				75470D772A50329400814D09 /* Gallery */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		75470D7D2A5037D900814D09 /* ImageManaging */ = {
+			isa = PBXGroup;
+			children = (
+				75C8D76D2A5973A500564FC6 /* ImageSource.swift */,
+			);
+			path = ImageManaging;
+			sourceTree = "<group>";
+		};
 		755847122A47275A00D88B2F /* Manager */ = {
 			isa = PBXGroup;
 			children = (
 				755847132A47279E00D88B2F /* FirebaseManager.swift */,
+				75470D7E2A50389400814D09 /* ImageManaging.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -173,6 +216,7 @@
 		75995FFC2A3CBF5900709A6C /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				75470D7C2A5036AD00814D09 /* Photo */,
 				75470D6A2A50254400814D09 /* Registration */,
 				75470D652A50251500814D09 /* Login */,
 				7599600A2A3D459D00709A6C /* TodoDetails */,
@@ -253,7 +297,6 @@
 				75995FE72A3CB81200709A6C /* Sources */,
 				75995FE82A3CB81200709A6C /* Frameworks */,
 				75995FE92A3CB81200709A6C /* Resources */,
-				3173EDACAFB1A91FBCC33220 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,23 +354,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3173EDACAFB1A91FBCC33220 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QtlTodoList/Pods-QtlTodoList-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QtlTodoList/Pods-QtlTodoList-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QtlTodoList/Pods-QtlTodoList-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8E878EE2EFC36C88ADBE69ED /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,7 +384,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				755847142A47279E00D88B2F /* FirebaseManager.swift in Sources */,
+				75470D7B2A50346C00814D09 /* SelectionGallery.swift in Sources */,
 				75470D752A5026A000814D09 /* AppConst.swift in Sources */,
+				75470D7F2A50389400814D09 /* ImageManaging.swift in Sources */,
 				75995FFF2A3CC01D00709A6C /* TodoViewModel.swift in Sources */,
 				7599600C2A3D45BA00709A6C /* AddTodoView.swift in Sources */,
 				75470D6D2A50256500814D09 /* RegistrationViewModel.swift in Sources */,
@@ -371,7 +399,9 @@
 				75470D682A50253800814D09 /* LoginViewModel.swift in Sources */,
 				7558471B2A473A1B00D88B2F /* AddTodoViewModel.swift in Sources */,
 				75470D692A50253800814D09 /* LoginView.swift in Sources */,
+				75C8D76E2A5973A500564FC6 /* ImageSource.swift in Sources */,
 				75995FEF2A3CB81200709A6C /* QtlTodoListApp.swift in Sources */,
+				75470D792A5032EA00814D09 /* CameraController.swift in Sources */,
 				759960022A3CC07E00709A6C /* Todos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
