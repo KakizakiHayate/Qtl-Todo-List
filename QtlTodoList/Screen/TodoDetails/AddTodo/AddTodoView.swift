@@ -9,8 +9,11 @@ import SwiftUI
 
 struct AddTodoView: View {
     // MARK: - Property Wrappers
+    @State private var selectedImageSource = 1
+    @State private var image = UIImage()
     @Binding var isTodoAddDetails: Bool
     @StateObject private var firebaseManager = FirebaseManager.shared
+    @StateObject private var imageManager = ImageManager.shared
     @StateObject private var addTodoViewModel = AddTodoViewModel.shared
 
     // MARK: - body
@@ -54,6 +57,22 @@ struct AddTodoView: View {
                             }
                         }
                     }
+                    Image(uiImage: image)
+                    Picker("画像選択", selection: $selectedImageSource) {
+                        Text("カメラを起動").tag(1)
+                        Text("ライブラリーから選択").tag(2)
+                    }.padding()
+                        .onChange(of: selectedImageSource) { newValue in
+                            imageManager.selectedImagePicker(selectedImageSource: newValue)
+                        }
+                        .sheet(isPresented: $imageManager.isCamera) {
+                            CameraController(image: $image,
+                                             isActivateCameraView: $imageManager.isCamera)
+                        }
+                        .sheet(isPresented: $imageManager.isLibrary) {
+                            SelectionGallery(image: $image,
+                                             isSelectionGalleryView: $imageManager.isLibrary)
+                        }
                     Button {
                         if !addTodoViewModel.title.isEmpty && !addTodoViewModel.message.isEmpty {
                             firebaseManager.createFirestoreData(title: addTodoViewModel.title, message: addTodoViewModel.message)
