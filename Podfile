@@ -10,5 +10,7 @@ target 'QtlTodoList' do
 
   # Pods for QtlTodoList
   pod 'FirebaseFirestore'
-
+  pod 'FirebaseAuth'
+  pod 'GoogleSignIn'
+  pod 'FirebaseStorage'
 end

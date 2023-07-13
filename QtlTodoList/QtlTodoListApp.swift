@@ -17,7 +17,7 @@ struct QtlTodoListApp: App {
     // MARK: - body
     var body: some Scene {
         WindowGroup {
-            TodoView()
+            LoginView()
         }
     } // body
-} // App
+} // app
